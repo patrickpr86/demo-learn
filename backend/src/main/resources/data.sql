@@ -15,5 +15,9 @@ INSERT INTO user_role (user_id, role_id) VALUES (3, 3);
 
 INSERT INTO course (name, img_uri, img_gray_uri) VALUES ('Bootcamp GO', 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 'https://www.programmersought.com/images/892/768c04585a653ddef26cb15758166bac.png');
 
-INSERT INTO offer (edition, start_moment, end_moment, course_id) VALUES('1.0', TIMESTAMP WITH TIME ZONE '2020-01-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-01-01T03:00:00Z', 1);
-INSERT INTO offer (edition, start_moment, end_moment, course_id) VALUES('2.0', TIMESTAMP WITH TIME ZONE '2021-01-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2022-01-01T03:00:00Z', 1);
+INSERT INTO offer (edition, start_moment, end_moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2020-01-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-01-01T03:00:00Z', 1);
+INSERT INTO offer (edition, start_moment, end_moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2021-01-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2022-01-01T03:00:00Z', 1);
+
+INSERT INTO resource (title, description, position, img_uri, type, offer_id) VALUES('Trilha GO', 'Trilha principal do curso', 1, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 1, 1);
+INSERT INTO resource (title, description, position, img_uri, type, offer_id) VALUES('Forum', 'Forum da comunidade', 2, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 2, 1);
+INSERT INTO resource (title, description, position, img_uri, type, offer_id) VALUES('Trilha GO', 'Trilha principal do curso', 3, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 0, 1);
