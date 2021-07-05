@@ -21,3 +21,7 @@ INSERT INTO offer (edition, start_moment, end_moment, course_id) VALUES ('2.0', 
 INSERT INTO resource (title, description, position, img_uri, type, offer_id) VALUES('Trilha GO', 'Trilha principal do curso', 1, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 1, 1);
 INSERT INTO resource (title, description, position, img_uri, type, offer_id) VALUES('Forum', 'Forum da comunidade', 2, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 2, 1);
 INSERT INTO resource (title, description, position, img_uri, type, offer_id) VALUES('Trilha GO', 'Trilha principal do curso', 3, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 0, 1);
+
+INSERT INTO section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Capítulo 1', 'Introdução ao capítulo 1', 1, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 1, null );
+INSERT INTO section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Capítulo 2', 'Introdução ao capítulo 2', 1, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 1, 1 );
+INSERT INTO section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Capítulo 3', 'Introdução ao capítulo 3', 1, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 1, 2 );
