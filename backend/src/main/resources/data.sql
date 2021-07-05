@@ -25,3 +25,6 @@ INSERT INTO resource (title, description, position, img_uri, type, offer_id) VAL
 INSERT INTO section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Capítulo 1', 'Introdução ao capítulo 1', 1, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 1, null );
 INSERT INTO section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Capítulo 2', 'Introdução ao capítulo 2', 1, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 1, 1 );
 INSERT INTO section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Capítulo 3', 'Introdução ao capítulo 3', 1, 'https://storage.ning.com/topology/rest/1.0/file/get/8170567668?profile=RESIZE_710x', 1, 2 );
+
+INSERT INTO enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2020-01-01T10:00:00Z', null, true, false);
+INSERT INTO enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2020-01-01T11:00:00Z', null, true, false);
