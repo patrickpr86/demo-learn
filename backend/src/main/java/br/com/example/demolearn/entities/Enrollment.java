@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import br.com.example.demolearn.entities.primarykey.EnrollmentPrimaryKey;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,6 +17,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "enrollment")
 @NoArgsConstructor
+@EqualsAndHashCode
 public class Enrollment implements Serializable {
 	private static final long serialVersionUID = 1L;
 
