@@ -2,10 +2,13 @@ package br.com.example.demolearn.entities;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import br.com.example.demolearn.entities.primarykey.EnrollmentPrimaryKey;
@@ -41,6 +44,9 @@ public class Enrollment implements Serializable {
 	@Getter
 	@Setter
 	private boolean onlyUpdate;
+	
+	@ManyToMany(mappedBy = "enrollmentsDone")
+	private Set<Lesson> lessonsDone = new HashSet<>();
 
 	public Enrollment(User user, Offer offer, Instant enrollMoment, Instant refundMoment, boolean available,
 			boolean onlyUpdate) {

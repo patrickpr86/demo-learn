@@ -50,8 +50,13 @@ public abstract class Lesson implements Serializable {
 	private Section section;
 
 	@ManyToMany
-	@JoinTable(name = "lessons_done", joinColumns = @JoinColumn(name = "lesson_id"), inverseJoinColumns = {
-			@JoinColumn(name = "user_id"), @JoinColumn(name = "offer_id") })
+	@JoinTable(name = "lessons_done",
+	joinColumns = @JoinColumn(name = "lesson_id"),
+	inverseJoinColumns = {
+			@JoinColumn(name = "user_id"),
+			@JoinColumn(name = "offer_id")
+			}
+	)
 	@Getter
 	private Set<Enrollment> enrollmentsDone = new HashSet<>();
 

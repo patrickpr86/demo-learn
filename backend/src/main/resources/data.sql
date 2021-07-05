@@ -28,3 +28,22 @@ INSERT INTO section (title, description, position, img_uri, resource_id, prerequ
 
 INSERT INTO enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2020-01-01T10:00:00Z', null, true, false);
 INSERT INTO enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2020-01-01T11:00:00Z', null, true, false);
+
+
+INSERT INTO lesson (title, position, section_id) VALUES ('Aula 1 do capítulo 1', 1, 1);
+INSERT INTO content (id, text_content, video_uri) VALUES (1, 'Material de apoio: material go', 'https://www.youtube.com/watch?v=c6h5eR0TvfU');
+
+INSERT INTO lesson (title, position, section_id) VALUES ('Aula 2 do capítulo 1', 2, 1);
+INSERT INTO content (id, text_content, video_uri) VALUES (2, 'Material de apoio: material go', 'https://www.youtube.com/watch?v=c6h5eR0TvfU');
+
+INSERT INTO lesson (title, position, section_id) VALUES ('Aula 3 do capítulo 1', 3, 1);
+INSERT INTO content (id, text_content, video_uri) VALUES (3, 'Material de apoio: material go', 'https://www.youtube.com/watch?v=c6h5eR0TvfU');
+
+INSERT INTO lesson (title, position, section_id) VALUES ('Tarefa do capítulo 1', 4, 1);
+INSERT INTO task (id, description, question_count, approval_count, weight, due_date) VALUES (4, 'Entregar CRUD completo', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2021-01-10T10:00:00Z' );
+
+INSERT INTO lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
+INSERT INTO lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
+INSERT INTO lessons_done (lesson_id, user_id, offer_id) VALUES (3, 1, 3);
+
+
